@@ -9,6 +9,6 @@ return {
   },
   config = function()
     vim.keymap.set("n", "<leader>n", ":Neotree toggle<CR>")
-    vim.keymap.set("n", "<C-h>", ":Neotree source=filesystem focus<CR>")
+    vim.keymap.set({"n","i","v"}, "<C-h>", ":Neotree source=filesystem focus<CR>")
   end,
 }
