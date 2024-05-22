@@ -12,7 +12,7 @@ return {
         ensure_installed = {
           "lua_ls",
           "tsserver",
-          "pyright",
+          "pylsp", --"pyright",
         },
       })
     end,
@@ -26,7 +26,7 @@ return {
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({ capabilities = capabilities })
       lspconfig.tsserver.setup({ capabilities = capabilities })
-      lspconfig.pyright.setup({ capabilities = capabilities })
+      lspconfig.pylsp.setup({ capabilities = capabilities })
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
