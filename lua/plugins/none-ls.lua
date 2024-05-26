@@ -10,6 +10,7 @@ return {
       sources = {
         null_ls.builtins.formatting.stylua,
         null_ls.builtins.formatting.prettierd,
+        null_ls.builtins.formatting.markdownlint,
         require("none-ls.formatting.eslint_d"),
         require("none-ls.code_actions.eslint_d"),
         null_ls.builtins.formatting.isort.with({
