@@ -26,6 +26,10 @@ local opts = { noremap = true, silent = true }
 vim.keymap.set("n", "\\s", ":split<CR>", opts)
 vim.keymap.set("n", "\\v", ":vsplit<CR>", opts)
 
+vim.keymap.set("n", "<C-j>", function()
+  vim.diagnostic.goto_next()
+end, opts)
+
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
@@ -47,3 +51,5 @@ vim.opt.backspace = {"start", "eol", "indent"}
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
+
+
