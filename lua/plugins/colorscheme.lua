@@ -14,7 +14,7 @@ return {
 		"folke/tokyonight.nvim",
 		name = "tokyonight",
 		lazy = false,
-		priority = 1000,
+		priority = 999,
 		opts = {},
 		config = function()
 			--vim.cmd.colorscheme("tokyonight")
@@ -63,7 +63,7 @@ return {
 				styles = {
 					bold = true,
 					italic = true,
-					transparency = true,
+					transparency = false,
 				},
 			})
 
@@ -101,14 +101,17 @@ return {
 			-- directly inside the plugin declaration.
 			vim.g.gruvbox_material_enable_italic = true
 			vim.g.gruvbox_material_better_performance = 1
-			vim.g.gruvbox_material_background = "hard" -- hard, medium or soft
+			vim.g.gruvbox_material_background = "soft" -- hard, medium or soft
 			vim.cmd.colorscheme("gruvbox-material")
 		end,
 	},
 	{
-		"craftzdog/solarized-osaka.nvim",
-		lazy = false,
-		priority = 999,
-		opts = {},
+		"ayu-theme/ayu-vim",
+		name = "ayu",
+		priority = 1000,
+		config = function()
+			vim.g.ayucolor = "dark"
+			vim.cmd.colorscheme("ayu")
+		end,
 	},
 }
