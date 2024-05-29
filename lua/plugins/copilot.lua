@@ -7,7 +7,6 @@ return {
 			panel = { enabled = false },
 			suggestion = {
 				auto_trigger = true,
-				-- Use alt to interact with Copilot.
 				keymap = {
 					accept = "<Tab>",
 					accept_word = "<M-w>",
@@ -17,14 +16,15 @@ return {
 					dismiss = "/",
 				},
 			},
-      -- Enable Copilot for these filetypes.
 			filetypes = {
+        -- Enable Copilot for these filetypes.
 				markdown = true,
 				typescript = true,
 				javascript = true,
 				python = true,
 				rust = true,
         lua = true,
+        -- Disable Copilot for these filetypes.
 				["*"] = false,
 			},
 		},
