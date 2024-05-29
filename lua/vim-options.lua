@@ -9,6 +9,7 @@ vim.opt.swapfile = false
 
 vim.keymap.set("n", ";", ":")
 vim.keymap.set("i", "jk", "<Esc>")
+vim.keymap.set("n", "<Esc>", ":noh<CR><Esc>")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-s>", ":w<CR>")
 vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>")
@@ -26,7 +27,7 @@ local opts = { noremap = true, silent = true }
 vim.keymap.set("n", "\\s", ":split<CR>", opts)
 vim.keymap.set("n", "\\v", ":vsplit<CR>", opts)
 
-vim.keymap.set("n", "<C-j>", function()
+vim.keymap.set("n", "<C-k>", function()
   vim.diagnostic.goto_next()
 end, opts)
 
