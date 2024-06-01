@@ -9,7 +9,7 @@ return {
       debug = true,
       sources = {
         null_ls.builtins.formatting.stylua,
-        null_ls.builtins.formatting.prettierd,
+        null_ls.builtins.formatting.prettierd.with({ extra_args = { "--line-length=80" } }),
         null_ls.builtins.formatting.markdownlint,
         require("none-ls.formatting.eslint_d"),
         require("none-ls.code_actions.eslint_d"),

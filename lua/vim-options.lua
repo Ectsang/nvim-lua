@@ -16,6 +16,8 @@ vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>")
 vim.keymap.set("n", "m/", "<Esc>_i#<Space><Esc>l")
 vim.keymap.set("n", "n/", "<Esc>_xx<Esc>")
 
+vim.keymap.set("n", "Z", ":ZenMode<CR>")
+
 vim.keymap.set("n", "x", '"_x')
 
 vim.keymap.set("n", "<c-k>", ":wincmd k<CR>")
