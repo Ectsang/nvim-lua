@@ -2,7 +2,7 @@ return {
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    priority = 999,
+    priority = 1999,
     config = function()
       -- vim.cmd.colorscheme("catppuccin")
       vim.cmd.colorscheme("catppuccin-frappe")
@@ -14,7 +14,7 @@ return {
     "folke/tokyonight.nvim",
     name = "tokyonight",
     lazy = false,
-    priority = 1999,
+    priority = 999,
     opts = {},
     config = function()
       --vim.cmd.colorscheme("tokyonight")
