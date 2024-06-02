@@ -16,7 +16,7 @@ vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>")
 vim.keymap.set("n", "m/", "<Esc>_i#<Space><Esc>l")
 vim.keymap.set("n", "n/", "<Esc>_xx<Esc>")
 
-vim.keymap.set("n", "Z", ":ZenMode<CR>")
+vim.keymap.set({"i","n"}, "<Esc><BS>", "<Esc>ciw<BS>")
 
 vim.keymap.set("n", "x", '"_x')
 
@@ -40,7 +40,7 @@ vim.opt.hlsearch = true
 vim.opt.backup = false
 vim.opt.showcmd = true
 vim.opt.cmdheight = 0
-vim.opt.laststatus = 0
+--vim.opt.laststatus = 0
 vim.opt.expandtab = true
 vim.opt.scrolloff = 10
 vim.opt.inccommand = "split"
