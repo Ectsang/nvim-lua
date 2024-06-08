@@ -8,7 +8,7 @@ return {
 			suggestion = {
 				auto_trigger = true,
 				keymap = {
-					accept = "<Tab>",
+					accept = "<M-v>",
 					accept_word = "<M-w>",
 					accept_line = "<M-l>",
 					next = "<M-]>",
@@ -17,14 +17,14 @@ return {
 				},
 			},
 			filetypes = {
-        -- Enable Copilot for these filetypes.
+				-- Enable Copilot for these filetypes.
 				markdown = true,
 				typescript = true,
 				javascript = true,
 				python = true,
 				rust = true,
-        lua = true,
-        -- Disable Copilot for these filetypes.
+				lua = true,
+				-- Disable Copilot for these filetypes.
 				["*"] = false,
 			},
 		},
