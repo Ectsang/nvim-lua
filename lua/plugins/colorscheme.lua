@@ -14,7 +14,7 @@ return {
     "folke/tokyonight.nvim",
     name = "tokyonight",
     lazy = false,
-    priority = 999,
+    priority = 1999,
     opts = {},
     config = function()
       --vim.cmd.colorscheme("tokyonight")
@@ -95,7 +95,7 @@ return {
   {
     "sainnhe/gruvbox-material",
     lazy = false,
-    priority = 1999,
+    priority = 999,
     config = function()
       -- Optionally configure and load the colorscheme
       -- directly inside the plugin declaration.

@@ -20,6 +20,7 @@ return {
 				-- Enable Copilot for these filetypes.
 				markdown = true,
 				typescript = true,
+        typescriptreact = true,
 				javascript = true,
 				python = true,
 				rust = true,
