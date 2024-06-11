@@ -35,7 +35,7 @@ return {
   {
     "ellisonleao/gruvbox.nvim",
     name = "gruvbox",
-    priority = 1999,
+    priority = 999,
     config = function()
       vim.cmd.colorscheme("gruvbox")
     end,
@@ -95,7 +95,7 @@ return {
   {
     "sainnhe/gruvbox-material",
     lazy = false,
-    priority = 999,
+    priority = 1999,
     config = function()
       -- Optionally configure and load the colorscheme
       -- directly inside the plugin declaration.
