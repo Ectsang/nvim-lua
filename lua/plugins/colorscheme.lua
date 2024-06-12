@@ -35,7 +35,7 @@ return {
   {
     "ellisonleao/gruvbox.nvim",
     name = "gruvbox",
-    priority = 999,
+    priority = 1999,
     config = function()
       vim.cmd.colorscheme("gruvbox")
     end,
@@ -43,7 +43,7 @@ return {
   {
     "EdenEast/nightfox.nvim",
     name = "nightfox",
-    priority = 1999,
+    priority = 999,
     config = function()
       --vim.cmd.colorscheme("nightfox")
       vim.cmd.colorscheme("duskfox")

@@ -13,8 +13,6 @@ vim.keymap.set("n", "<Esc>", ":noh<CR><Esc>")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-s>", ":w<CR>")
 vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>")
-vim.keymap.set("n", "m/", "<Esc>_i#<Space><Esc>l")
-vim.keymap.set("n", "n/", "<Esc>_xx<Esc>")
 
 vim.keymap.set({"i","n"}, "<Esc><BS>", "<Esc>ciw<BS>")
 
@@ -39,6 +37,7 @@ vim.keymap.set("n", "<leader>h", function()
   vim.diagnostic.goto_prev()
 end, opts)
 
+-- show diagnostic in float window
 vim.keymap.set("n", "<leader>K", ":lua vim.diagnostic.open_float()<cr>")
 
 vim.opt.title = true
@@ -55,8 +54,6 @@ vim.opt.inccommand = "split"
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.breakindent = true
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
 vim.opt.wrap = false
 vim.opt.backspace = {"start", "eol", "indent"}
 vim.opt.splitbelow = true
