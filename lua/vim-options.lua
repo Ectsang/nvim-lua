@@ -20,6 +20,9 @@ vim.keymap.set({"i","n"}, "<Esc><BS>", "<Esc>ciw<BS>")
 
 vim.keymap.set("n", "x", '"_x')
 
+vim.keymap.set("n", "<M-k>", "ddkP")
+vim.keymap.set("n", "<M-j>", "ddp")
+
 vim.keymap.set("n", "<c-k>", ":wincmd k<CR>")
 vim.keymap.set("n", "<c-j>", ":wincmd j<CR>")
 vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
@@ -29,9 +32,14 @@ local opts = { noremap = true, silent = true }
 vim.keymap.set("n", "\\s", ":split<CR>", opts)
 vim.keymap.set("n", "\\v", ":vsplit<CR>", opts)
 
-vim.keymap.set("n", "<C-k>", function()
+vim.keymap.set("n", "<leader>l", function()
   vim.diagnostic.goto_next()
 end, opts)
+vim.keymap.set("n", "<leader>h", function()
+  vim.diagnostic.goto_prev()
+end, opts)
+
+vim.keymap.set("n", "<leader>K", ":lua vim.diagnostic.open_float()<cr>")
 
 vim.opt.title = true
 vim.opt.autoindent = true
