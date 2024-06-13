@@ -5,6 +5,7 @@ return {
 			require("blame_line").setup({
 				show_in_visual = true,
 				template = "<author> • <author-time> • <summary>",
+        prefix = "    ",
 				-- The date format settings, for `"<author-time>"` and `"<committer-time>"`
 				date = {
 					-- whether the date should be relative instead of precise
