@@ -43,7 +43,7 @@ return {
   {
     "EdenEast/nightfox.nvim",
     name = "nightfox",
-    priority = 999,
+    priority = 1999,
     config = function()
       --vim.cmd.colorscheme("nightfox")
       vim.cmd.colorscheme("duskfox")
@@ -73,7 +73,7 @@ return {
   {
     "sainnhe/everforest",
     name = "everforest",
-    priority = 1999,
+    priority = 999,
     config = function()
       vim.g.everforest_background = "medium" -- hard, medium or soft
       vim.cmd.colorscheme("everforest")
