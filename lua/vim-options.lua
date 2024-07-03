@@ -8,13 +8,16 @@ vim.g.mapleader = " "
 vim.opt.swapfile = false
 
 vim.keymap.set("n", ";", ":")
-vim.keymap.set("i", "jk", "<Esc>")
+vim.keymap.set({"i", "v"}, "jk", "<Esc>")
 vim.keymap.set("n", "<Esc>", ":noh<CR><Esc>")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-s>", ":w<CR>")
 vim.keymap.set("i", "<C-s>", "<Esc>:w<CR>")
 
-vim.keymap.set({"i","n"}, "<Esc><BS>", "<Esc>ciw<BS>")
+vim.keymap.set("n", "<C-p>", ":bprev<CR>")
+vim.keymap.set("n", "<C-n>", ":bnext<CR>")
+
+vim.keymap.set({"i","n"}, "<M-BS>", "<Esc>ciw<BS>")
 
 vim.keymap.set("n", "x", '"_x')
 

@@ -14,7 +14,7 @@ return {
     "folke/tokyonight.nvim",
     name = "tokyonight",
     lazy = false,
-    priority = 1999,
+    priority = 999,
     opts = {},
     config = function()
       --vim.cmd.colorscheme("tokyonight")
@@ -73,7 +73,7 @@ return {
   {
     "sainnhe/everforest",
     name = "everforest",
-    priority = 999,
+    priority = 1999,
     config = function()
       vim.g.everforest_background = "medium" -- hard, medium or soft
       vim.cmd.colorscheme("everforest")
