@@ -14,7 +14,7 @@ return {
     "folke/tokyonight.nvim",
     name = "tokyonight",
     lazy = false,
-    priority = 999,
+    priority = 1999,
     opts = {},
     config = function()
       --vim.cmd.colorscheme("tokyonight")
@@ -112,6 +112,13 @@ return {
     config = function()
       vim.g.ayucolor = "dark"
       vim.cmd.colorscheme("ayu")
+    end,
+  },
+  {
+    "ptdewey/darkearth-nvim",
+    priority = 999,
+    config = function()
+      vim.cmd.colorscheme("darkearth")
     end,
   },
 }
