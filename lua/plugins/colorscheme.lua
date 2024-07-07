@@ -33,14 +33,6 @@ return {
     end,
   },
   {
-    "ellisonleao/gruvbox.nvim",
-    name = "gruvbox",
-    priority = 1999,
-    config = function()
-      vim.cmd.colorscheme("gruvbox")
-    end,
-  },
-  {
     "EdenEast/nightfox.nvim",
     name = "nightfox",
     priority = 1999,
@@ -68,15 +60,6 @@ return {
       })
 
       vim.cmd.colorscheme("rose-pine")
-    end,
-  },
-  {
-    "sainnhe/everforest",
-    name = "everforest",
-    priority = 1999,
-    config = function()
-      vim.g.everforest_background = "medium" -- hard, medium or soft
-      vim.cmd.colorscheme("everforest")
     end,
   },
   {
@@ -115,10 +98,11 @@ return {
     end,
   },
   {
-    "ptdewey/darkearth-nvim",
+    "savq/melange-nvim",
+    name = "melange",
     priority = 999,
     config = function()
-      vim.cmd.colorscheme("darkearth")
+      vim.cmd.colorscheme("melange")
     end,
   },
 }
