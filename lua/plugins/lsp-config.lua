@@ -17,6 +17,7 @@ local lsp = {
 					"lua_ls",
 					"tsserver",
 					"pyright",
+					"rust_analyzer",
 				},
 			})
 		end,
@@ -36,6 +37,10 @@ local lsp = {
 				on_attach = on_attach,
 				capabilities = capabilities,
 				filetypes = { "python" },
+			})
+			lspconfig.rust_analyzer.setup({
+				on_attach = on_attach,
+				capabilities = capabilities,
 			})
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
