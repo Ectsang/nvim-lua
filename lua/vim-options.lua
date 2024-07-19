@@ -19,7 +19,7 @@ vim.keymap.set("n", "<C-n>", ":bnext<CR>")
 
 vim.keymap.set({ "i", "n" }, "<M-BS>", "<Esc>ciw<BS>")
 
-vim.keymap.set("n", "x", '"_x')
+vim.keymap.set({ "n", "v" }, "x", '"_x')
 
 vim.keymap.set("n", "<M-k>", "ddkP")
 vim.keymap.set("n", "<M-j>", "ddp")
@@ -34,10 +34,10 @@ vim.keymap.set("n", "\\s", ":split<CR>", opts)
 vim.keymap.set("n", "\\v", ":vsplit<CR>", opts)
 
 vim.keymap.set("n", "<leader>l", function()
-	vim.diagnostic.goto_next()
+  vim.diagnostic.goto_next()
 end, opts)
 vim.keymap.set("n", "<leader>h", function()
-	vim.diagnostic.goto_prev()
+  vim.diagnostic.goto_prev()
 end, opts)
 
 -- always yank to clipboard
