@@ -105,4 +105,14 @@ return {
 			vim.cmd.colorscheme("melange")
 		end,
 	},
+	{
+		"0xstepit/flow.nvim",
+		lazy = false,
+		name = "flow",
+		priority = 999,
+		opts = {},
+		config = function()
+			vim.cmd.colorscheme("flow")
+		end,
+	},
 }
