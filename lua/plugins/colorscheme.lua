@@ -5,9 +5,9 @@ return {
 		priority = 1999,
 		config = function()
 			-- vim.cmd.colorscheme("catppuccin")
-			vim.cmd.colorscheme("catppuccin-frappe")
+			-- vim.cmd.colorscheme("catppuccin-frappe")
 			-- vim.cmd.colorscheme("catppuccin-macchiato")
-			-- vim.cmd.colorscheme("catppuccin-mocha")
+			vim.cmd.colorscheme("catppuccin-mocha")
 		end,
 	},
 	{
@@ -95,24 +95,6 @@ return {
 		config = function()
 			vim.g.ayucolor = "dark"
 			vim.cmd.colorscheme("ayu")
-		end,
-	},
-	{
-		"savq/melange-nvim",
-		name = "melange",
-		priority = 1999,
-		config = function()
-			vim.cmd.colorscheme("melange")
-		end,
-	},
-	{
-		"0xstepit/flow.nvim",
-		lazy = false,
-		name = "flow",
-		priority = 999,
-		opts = {},
-		config = function()
-			vim.cmd.colorscheme("flow")
 		end,
 	},
 }
