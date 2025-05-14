@@ -15,11 +15,8 @@ local lsp = {
       require("mason-lspconfig").setup({
         ensure_installed = {
           "lua_ls",
-          "ts_ls",
           "pyright",
           "rust_analyzer",
-          "solidity",
-          "solidity_ls",
         },
       })
     end,
