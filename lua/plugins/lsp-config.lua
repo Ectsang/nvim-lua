@@ -25,8 +25,8 @@ local lsp = {
     "neovim/nvim-lspconfig",
     lazy = false,
     config = function()
-      local cmp_nvim_lsp = require("cmp_nvim_lsp")
-      local cmp_capabilities = cmp_nvim_lsp.default_capabilities()
+      --local cmp_nvim_lsp = require("cmp_nvim_lsp")
+      --local cmp_capabilities = cmp_nvim_lsp.default_capabilities()
 
       local config = require("mason-lspconfig")
       local on_attach = config.on_attach
