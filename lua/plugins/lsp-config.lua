@@ -17,6 +17,7 @@ local lsp = {
           "lua_ls",
           "pyright",
           "rust_analyzer",
+          "ts_ls",
         },
       })
     end,
