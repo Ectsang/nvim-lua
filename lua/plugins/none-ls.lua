@@ -5,6 +5,9 @@ return {
 	},
 	config = function()
 		local null_ls = require("null-ls")
+		-- Dedicated group so format-on-save autocmds are deduped per buffer and
+		-- we don't clear unrelated buffer autocmds on attach.
+		local augroup = vim.api.nvim_create_augroup("LspFormatting", { clear = true })
 		null_ls.setup({
 			debug = true,
 			sources = {

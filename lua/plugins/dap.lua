@@ -10,8 +10,10 @@ return {
 			"rcarriga/nvim-dap-ui",
 		},
 		config = function()
-			local path = ".venv/bin/python"
-			-- local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
+			-- Run the debug adapter from Mason's debugpy venv (always present).
+			-- dap-python still runs the debuggee with the project's own venv
+			-- (VIRTUAL_ENV / .venv) when one is active, so imports resolve.
+			local path = vim.fn.stdpath("data") .. "/mason/packages/debugpy/venv/bin/python"
 			require("dap-python").setup(path)
 		end,
 	},
@@ -19,6 +21,7 @@ return {
 		"rcarriga/nvim-dap-ui",
 		dependencies = {
 			"mfussenegger/nvim-dap",
+			"nvim-neotest/nvim-nio",
 		},
 		config = function()
 			local dap = require("dap")
@@ -42,33 +45,4 @@ return {
 		vim.keymap.set("n", "<leader>di", "<cmd> DapStepInto<CR>"),
 		vim.keymap.set("n", "<leader>dr", "<cmd> DapRestart<CR>"),
 	},
-	{
-		"nvim-neotest/neotest",
-		dependencies = { "nvim-neotest/nvim-nio" },
-	},
-	-- {
-	-- 	"nvim-neotest/neotest",
-	-- 	dependencies = {
-	-- 		"nvim-neotest/nvim-nio",
-	-- 		"nvim-lua/plenary.nvim",
-	-- 		"antoinemadec/FixCursorHold.nvim",
-	-- 		"nvim-treesitter/nvim-treesitter",
-	-- 		"nvim-neotest/neotest-plenary",
-	-- 		"nvim-neotest/neotest-python",
-	-- 		"nvim-neotest/neotest-jest",
-	-- 	},
-	-- 	config = function()
-	-- 		require("neotest").setup({
-	-- 			adapters = {
-	-- 				require("neotest-python")({
-	-- 					dap = { justMyCode = false },
-	-- 					args = { "--log-level", "DEBUG" },
-	-- 					runner = "pytest",
-	-- 					python = ".venv/bin/python",
-	-- 				}),
-	-- 				require("neotest-plenary"),
-	-- 			},
-	-- 		})
-	-- 	end,
-	-- },
 }

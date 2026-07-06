@@ -25,10 +25,8 @@ vim.keymap.set({ "n", "v" }, "x", '"_x')
 vim.keymap.set("n", "<M-o>", "ddkP")
 vim.keymap.set("n", "<M-i>", "ddp")
 
-vim.keymap.set("n", "<c-k>", ":wincmd k<CR>")
-vim.keymap.set("n", "<c-j>", ":wincmd j<CR>")
-vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
-vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
+-- window navigation (<C-h/j/k/l>) is handled by vim-tmux-navigator, which
+-- falls back to :wincmd when not inside a tmux pane.
 
 local opts = { noremap = true, silent = true }
 vim.keymap.set("n", "\\s", ":split<CR>", opts)
