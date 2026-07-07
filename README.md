@@ -22,6 +22,7 @@ Personal Neovim config. Put the contents of this repo in your `~/.config/nvim` d
 - **Navigation:** telescope, harpoon, flash, neo-tree, outline, vim-tmux-navigator.
 - **Git:** gitsigns, fugitive, lazygit, inline blame.
 - **Debug:** nvim-dap + dap-ui + dap-python.
+- **Markdown:** [markview.nvim](https://github.com/OXY2DEV/markview.nvim) in-buffer rendering (callouts, LaTeX, code-block icons). render-markdown.nvim stays installed but disabled as a fallback. A local `queries/markdown/injections.scm` overrides nvim-treesitter's markdown injections query, which crashes on Neovim 0.12.
 
 ## Key maps (leader = `<Space>`)
 
